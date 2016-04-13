@@ -12,13 +12,21 @@ body                                                { font-family: "Open Sans"; 
 ********************************/
 .navbar-default                                     { min-height: 60px; margin-bottom: 0; background-color: #01D8A2; border: none; border-radius: 0; }
 .navbar-brand                                       { height: 60px; }
-.navbar-default .navbar-nav > li > a                { padding: 15px 20px; font-size: 14px; font-weight: 300; line-height: 30px; text-transform: uppercase; color: #fff; }
+.navbar-default .navbar-nav > li > a                { padding: 15px 25px; font-size: 14px; font-weight: 300; line-height: 30px; text-transform: uppercase; color: #fff; }
 .navbar-default .navbar-nav > li > a:hover          { color: #ddd; }
-.navbar-default .navbar-nav > li > a:last-child     { padding-right: 0; }
+.navbar-default .navbar-nav > li:last-child > a     { padding-right: 0; }
 
 /********************************
     Banner Styles
 ********************************/
-#banner                                             { padding-top: 80px; padding-bottom: 60px; background: url(../img/banner.png) no-repeat; }
+#banner                                             { padding-top: 80px; padding-bottom: 55px; background: url(../img/banner.png) no-repeat; }
 #banner img                                         { margin-bottom: 20px; }
 #banner p                                           { font-size: 18px; font-weight: 300; color: #fff; }
+
+/********************************
+    Slider Styles
+********************************/
+#slider-container                                   { background-color: #308E7C; }
+#slider .item                                       { margin: 70px 0 90px; }
+#slider .item p                                     { margin-bottom: 30px; font-size: 16px; font-weight: 300; color: #fff; }
+#slider .item p:last-child                          { margin-bottom: 0; }
