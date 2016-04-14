@@ -289,7 +289,6 @@ module.exports  = function ( grunt ) {
         'concurrent:dist',
         'postcss',
         'concat',
-        'requirejs',
         'copy:dist',
         'cdnify',
         'uglify',
