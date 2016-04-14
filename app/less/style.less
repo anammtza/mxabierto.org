@@ -6,15 +6,17 @@
 ********************************/
 .container-fluid                                    { max-width: 1020px; }
 img                                                 { max-width: 100%; }
+ul                                                  { list-style: none; }
 
 /********************************
     Font Styles
 ********************************/
 body                                                { font-family: "Open Sans"; font-size: 14px; font-weight: 300; color: #515151; }
-h1                                                  { margin-bottom: 20px; padding-bottom: 10px; font-size: 23px; font-weight: 300; color: #4d4d4d; border-bottom: 1px solid #979797; text-transform: uppercase; }
+h1                                                  { margin-bottom: 30px; padding-bottom: 10px; font-size: 23px; font-weight: 300; color: #4d4d4d; border-bottom: 1px solid #979797; text-transform: uppercase; }
 h3                                                  { font-size: 23px; font-weight: 700; line-height: 32px; color: #4d4d4d; }
 h4                                                  { font-size: 14px; font-weight: 700; line-height: 20px; color: #515151; }
 small                                               { font-size: 75%; }
+ul > li                                             { font-size: 16px; font-weight: 300; color: #4d4d4d; }
 .btn-primary                                        { font-size: 26px; font-weight: 300; color: #fff; text-transform: uppercase; }
 #experiences .widget .body small                    { text-transform: uppercase; }
 #experiences .widget .body p                        { font-size: 12px; font-weight: 300; }
@@ -87,8 +89,17 @@ form .form-control                                  { border: 1px solid #979797;
 /********************************
     Experiences Styles
 ********************************/
-#experiences                                        { margin-bottom: 30px; }
+#experiences                                        { margin-bottom: 50px; }
 #experiences .widget                                { margin-bottom: 20px; background-color: #f2f2f2; }
 #experiences .widget .body                          { padding: 10px 20px 10px 0; }
 #experiences .widget .body h4                       { margin-top: 0; }
 #experiences .widget .body p                        { margin-bottom: 5px; }
+
+/********************************
+    Innovators Styles
+********************************/
+#innovators                                         { margin-bottom: 50px; }
+#innovators ul > li                                 { margin-bottom: 15px; }
+#innovators ul > li:last-child                      { margin-bottom: 0; }
+.video                                              { margin: 0; padding: 0; padding-top: 56.25%; position: relative; overflow: hidden; }
+.video iframe                                       { width: 100%; height: 100%; border: none; position: absolute; left: 0; top: 0; }
