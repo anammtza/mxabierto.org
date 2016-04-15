@@ -1,2 +1,9 @@
 .DS_Store
-/.c9
+npm-debug.log
+
+node_modules
+bower_components
+app/css
+dist
+.tmp
+.grunt

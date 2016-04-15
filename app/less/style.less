@@ -1,0 +1,119 @@
+@import url( '../../bower_components/bootstrap/less/bootstrap.less' );
+@import url( https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic );
+
+/********************************
+    General Styles
+********************************/
+.container-fluid                                    { max-width: 1020px; }
+img                                                 { max-width: 100%; }
+ul                                                  { list-style: none; }
+
+/********************************
+    Font Styles
+********************************/
+body                                                { font-family: "Open Sans"; font-size: 14px; font-weight: 300; color: #515151; }
+h1                                                  { margin-bottom: 30px; padding-bottom: 10px; font-size: 23px; font-weight: 300; color: #4d4d4d; border-bottom: 1px solid #979797; text-transform: uppercase; }
+h3                                                  { font-size: 23px; font-weight: 700; line-height: 32px; color: #4d4d4d; }
+h4                                                  { font-size: 14px; font-weight: 700; line-height: 20px; color: #515151; }
+small                                               { font-size: 75%; }
+ul > li                                             { font-size: 16px; font-weight: 300; color: #4d4d4d; }
+.btn-primary                                        { font-size: 26px; font-weight: 300; color: #fff; text-transform: uppercase; }
+#experiences .widget .body small                    { text-transform: uppercase; }
+#experiences .widget .body p                        { font-size: 12px; font-weight: 300; }
+
+/********************************
+    Forms Styles
+********************************/
+form .form-control                                  { border: 1px solid #979797; border-radius: 10px; }
+.btn-primary                                        { display: block; margin: 0 auto 20px; padding: 10px 25px; background-color: #00cc99; border: none; border-radius: 15px; box-shadow: 0 0 15px 1px rgba(0,0,0,0.4); }
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus                                  { background-color: #059773; }
+
+/********************************
+    Navbar Styles
+********************************/
+.navbar-default                                     { min-height: 60px; margin-bottom: 0; background-color: #01D8A2; border: none; border-radius: 0; }
+.navbar-brand                                       { height: 60px; }
+.navbar-default .navbar-nav > li > a                { padding: 15px 25px; font-size: 14px; font-weight: 300; line-height: 30px; text-transform: uppercase; color: #fff; }
+.navbar-default .navbar-nav > li > a:hover          { color: #ddd; }
+.navbar-default .navbar-nav > li:last-child > a     { padding-right: 0; }
+
+/********************************
+    Banner Styles
+********************************/
+#banner                                             { padding-top: 80px; padding-bottom: 55px; background: url(../img/banner.png) no-repeat; }
+#banner img                                         { margin-bottom: 20px; }
+#banner p                                           { font-size: 18px; font-weight: 300; color: #fff; }
+
+/********************************
+    Slider Styles
+********************************/
+#slider-container                                   { background-color: #308E7C; }
+#slider .item                                       { margin: 70px 0 90px; }
+#slider .item p                                     { margin-bottom: 30px; font-size: 16px; font-weight: 300; color: #fff; }
+#slider .item p:last-child                          { margin-bottom: 0; }
+
+/********************************
+    Members Styles
+********************************/
+#members                                            { margin-top: 30px; }
+.member h3                                          { margin-top: 0; padding: 30px 0; text-align: center; border-bottom: 1px solid #4d4d4d; }
+.member h3.multiline                                { padding: 14px 0; }
+.member h2                                          { font-size: 120px; font-weight: 300; color: #4d4d4d; text-align: center; }
+#data-container                                     { margin-top: 40px; position: relative; }
+#data-container .info-container                     { width: 350px; padding: 20px; box-shadow: 0 0 15px 1px rgba(0,0,0,0.2); position: absolute; top: 10px; right: 10px; }
+#data-container .info-container h3                  { margin: 0 0 20px; font-size: 20px; font-weight: 700; color: #515151; }
+#data-container .info-container h4                  { margin-bottom: 0; font-size: 14px; font-weight: 600; color: #515151; }
+#data-container .info-container p                   { margin-bottom: 30px; font-size: 14px; font-weight: 300; color: #515151; }
+#data-container .info-container p:last-child        { margin-bottom: 0; }
+
+/********************************
+    Tools Styles
+********************************/
+#tools                                              { margin-bottom: 50px; }
+#tools .widget .title                               { margin-bottom: 20px; border-bottom: 1px solid #4d4d4d; text-align: center; }
+#tools .widget .title > h3                          { padding-bottom: 51px; }
+#tools .widget .title > h3.with-subtitle            { padding-bottom: 0; }
+#tools .widget .title > p                           { margin-bottom: 5px; font-size: 16px; font-weight: 300; color: #4d4d4d; }
+#tools .widget .title > p.single-line               { margin-bottom: 28px; }
+#tools .widget .body                                { text-align: center; }
+#tools .widget .body img                            { margin-bottom: 20px; }
+
+/********************************
+    Subscribe Styles
+********************************/
+#subscribe                                          { margin-bottom: 30px; background: url(../img/form_bg.png) no-repeat; }
+#subscribe h3                                       { color: #fff; text-align: center; }
+
+/********************************
+    Experiences Styles
+********************************/
+#experiences                                        { margin-bottom: 50px; }
+#experiences .widget                                { margin-bottom: 20px; background-color: #f2f2f2; }
+#experiences .widget .body                          { padding: 10px 20px 10px 0; }
+#experiences .widget .body h4                       { margin-top: 0; }
+#experiences .widget .body p                        { margin-bottom: 5px; }
+
+/********************************
+    Innovators Styles
+********************************/
+#innovators                                         { margin-bottom: 50px; }
+#innovators ul > li                                 { margin-bottom: 15px; }
+#innovators ul > li:last-child                      { margin-bottom: 0; }
+.video                                              { margin: 0; padding: 0; padding-top: 56.25%; position: relative; overflow: hidden; }
+.video iframe                                       { width: 100%; height: 100%; border: none; position: absolute; left: 0; top: 0; }
+
+/********************************
+    Footer Styles
+********************************/
+footer                                              { background-color: #f2f2f2; border-top: 20px solid #0c9; }
+footer .row                                         { margin: 50px auto; }
+footer .right-border                                { border-right: 1px solid rgba(0,0,0,0.05); }
+footer ul > li                                      { margin-bottom: 10px; }
+footer ul > li:last-child                           { margin-bottom: 0; }
+footer ul > li > a                                  { font-size: 13px; color: #999; }
+footer ul > li > a:hover                            { color: #666; }
+footer .logos-list                                  { padding-left: 0; overflow: hidden; }
+footer .logos-list > li                             { width: 20%; margin-bottom: 0; float: left; }
+footer .logos-list > li > span                      { display: block; padding: 0 20px; }
