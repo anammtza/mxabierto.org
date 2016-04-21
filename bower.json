@@ -3,6 +3,7 @@
     "description"       : "Landing page de la Red México Abierto",
     "version"           : "2.0.0",
     "dependencies"      : {
-        "bootstrap"     : "^3.3.5"
+        "bootstrap"     : "^3.3.5",
+        "leaflet"       : "0.7.7"
     }
 }
