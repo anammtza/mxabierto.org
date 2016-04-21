@@ -110,13 +110,13 @@
             </div>
             <div id="data-container" class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <img src="img/map.png">
+                    <div id="map"></div>
                 </div>
                 <div class="info-container">
-                    <h3>Ahome-Sinaloa</h3>
+                    <h3></h3>
                     <h4>Número de recursos publicados</h4>
-                    <p>47</p>
-                    <p><a href="#">Consulta sus datos abiertos</a></p>
+                    <p id="member-data"></p>
+                    <p><a href="#" target="_blank" id="member-data-link">Consulta sus datos abiertos</a></p>
                 </div>
             </div>
         </div>
@@ -322,6 +322,8 @@
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
         <!-- endbower -->
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="js/site.js"></script>
         <!-- endbuild -->
     </body>
 </html>
