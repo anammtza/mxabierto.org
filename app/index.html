@@ -9,6 +9,7 @@
         <link rel="shortcut icon" href="img/favicon.ico">
         <!-- build:css(.) css/vendor.css -->
         <!-- bower:css -->
+        <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) css/style.css -->
@@ -109,15 +110,13 @@
             </div>
             <div id="data-container" class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <img src="img/map.png">
+                    <div id="map"></div>
                 </div>
                 <div class="info-container">
-                    <h3>Ahome-Sinaloa</h3>
-                    <h4>Visión</h4>
-                    <p>Lorem ipsum dolor sit amet, consectadipiscing elit. Fusce auctor lacinia viverra. Suspendisse potenti. Fusce  adipiscing elit. Fusce auctor lacinia viverra. Suspendisse potenti.</p>
+                    <h3></h3>
                     <h4>Número de recursos publicados</h4>
-                    <p>47</p>
-                    <p><a href="#">Consulta sus datos abiertos</a></p>
+                    <p id="member-data"></p>
+                    <p><a href="#" target="_blank" id="member-data-link">Consulta sus datos abiertos</a></p>
                 </div>
             </div>
         </div>
@@ -321,7 +320,10 @@
         <!-- bower:js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/leaflet/dist/leaflet-src.js"></script>
         <!-- endbower -->
+        <script src="http://d3js.org/topojson.v1.min.js"></script>
+        <script src="js/site.js"></script>
         <!-- endbuild -->
     </body>
 </html>
