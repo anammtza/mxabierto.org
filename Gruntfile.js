@@ -61,6 +61,7 @@ module.exports  = function ( grunt ) {
                         'partials/{,*/}*.html',
                         'img/{,*/}*.*',
                         'css/{,*/}*.css',
+                        'js/{,*/}*.js',
                         'data/{,*/}*.*',
                         'CNAME'
                     ]
@@ -70,41 +71,6 @@ module.exports  = function ( grunt ) {
                     cwd     : '.',
                     src     : 'bower_components/bootstrap/fonts/*',
                     dest    : '<%= config.dist %>/fonts'
-                }, {
-                    expand  : true,
-                    cwd     : '.',
-                    src     : 'bower_components/requirejs/require.js',
-                    dest    : '<%= config.dist %>'
-                }, {
-                    expand  : true,
-                    cwd     : '.',
-                    src     : [
-                        'bower_components/polymer/polymer.html',
-                        'bower_components/polymer/polymer-mini.html',
-                        'bower_components/polymer/polymer-micro.html'
-                    ],
-                    dest    : '<%= config.dist %>'
-                }, {
-                    expand  : true,
-                    cwd     : '.',
-                    src     : 'bower_components/dgm-navbar/dgm-navbar.html',
-                    dest    : '<%= config.dist %>'
-                }, {
-                    expand  : true,
-                    cwd     : '.',
-                    src     : 'bower_components/dgm-footer/dgm-footer.html',
-                    dest    : '<%= config.dist %>'
-                }]
-            },
-            altdist : {
-                files   : [{
-                    expand  : true,
-                    dot     : true,
-                    cwd     : '<%= config.app %>',
-                    dest    : '<%= config.dist %>',
-                    src     : [
-                        'img/ic-*.png'
-                    ]
                 }]
             }
         },
@@ -137,6 +103,7 @@ module.exports  = function ( grunt ) {
         filerev                 : {
             dist    : {
                 src : [
+                    '<%= config.dist %>/js/site.js',
                     '<%= config.dist %>/js/vendor.js',
                     '<%= config.dist %>/css/{,*/}*.css',
                     '<%= config.dist %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -238,7 +205,7 @@ module.exports  = function ( grunt ) {
                     html: {
                         steps   : {
                             js  : ['concat', 'uglify'],
-                            css : ['cssmin']
+                            css : ['concat', 'cssmin']
                         },
                         post: {}
                     }
@@ -291,11 +258,11 @@ module.exports  = function ( grunt ) {
         'concat',
         'copy:dist',
         'cdnify',
+        'cssmin',
         'uglify',
         'filerev',
         'usemin',
-        'htmlmin',
-        'copy:altdist'
+        'htmlmin'
     ]);
     grunt.registerTask( 'publish', [
         'build',
