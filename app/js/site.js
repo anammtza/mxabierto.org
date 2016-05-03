@@ -172,7 +172,7 @@ var MXAbierto   = {
                     color       : '#ffffff',
                     opacity     : 1,
                     weight      : 1,
-                    fillColor   : '#308e7c',
+                    fillColor   : '#ddd',
                     fillOpacity : 1
                 },
                 highlightStyle  : {
@@ -187,14 +187,12 @@ var MXAbierto   = {
                 onEachFeature   : function ( feature, layer ) {
                     layer.setStyle( styles.defaultStyle );
 
-                    ( function ( layer ) {
-                        layer.on( 'mouseover', function () {
-                            layer.setStyle( styles.highlightStyle );
-                        });
-                        layer.on( 'mouseout', function () {
-                            layer.setStyle( styles.defaultStyle );
-                        });
-                    })( layer, feature.properties );
+                    if ( feature.properties.CVE_ENT == '17' || feature.properties.CVE_ENT == '14' || feature.properties.CVE_ENT == '05' ||
+                         feature.properties.CVE_ENT == '02' || feature.properties.CVE_ENT == '30' || feature.properties.CVE_ENT == '06' || feature.properties.CVE_ENT == '15' || feature.properties.CVE_ENT == '26' ) {
+                        layer.setStyle( styles.highlightStyle );
+                    } else {
+                        layer.setStyle( styles.defaultStyle );
+                    }
                 }
             }).addTo( that._map );
         });
