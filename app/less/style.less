@@ -29,7 +29,6 @@ form .form-control                                  { border: 1px solid #979797;
 .form-control.valid                                 { border-color: #009f01; }
 .form-control.mce_inline_error                      { border-color: #f00; }
 div.mce_inline_error                                { display: none !important; }
-#mce-responses                                      { display: none; }
 .btn-primary                                        { display: block; margin: 0 auto 20px; padding: 10px 25px; background-color: #00cc99; border: none; border-radius: 15px; box-shadow: 0 0 15px 1px rgba(0,0,0,0.4); }
 .btn-primary:hover,
 .btn-primary:active,
@@ -88,8 +87,12 @@ div.mce_inline_error                                { display: none !important; 
 /********************************
     Subscribe Styles
 ********************************/
-#subscribe                                          { margin-bottom: 30px; background: url(../img/form_bg.png) no-repeat; }
+#subscribe                                          { margin-bottom: 30px; background: url(../img/form_bg.png) no-repeat; background-size: cover; }
 #subscribe h3                                       { color: #fff; text-align: center; }
+#mce-responses                                      { display: block; margin-bottom: 20px; }
+#mce-responses > div                                { padding: 10px; font-weight: bold; text-align: center; color: #fff; border: 1px solid rgba(0,0,0,0.2); border-radius: 10px; }
+#mce-responses #mce-success-response                { background-color: @brand-success; }
+#mce-responses #mce-error-response                  { background-color: @brand-danger; }
 
 /********************************
     Experiences Styles
