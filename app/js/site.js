@@ -1,4 +1,6 @@
 var MXAbierto   = {
+    _cluster    : null,
+
     _icons      : {},
 
     _map        : null,
@@ -143,12 +145,17 @@ var MXAbierto   = {
     },
 
     _addMarkers : function () {
-        var that    = this;
+        var that        = this;
+        this._cluster   = L.markerClusterGroup({
+            spiderfyOnMaxZoom   : true
+        });
 
         for ( var i = 0; i < this._members.length; i++ ) {
             this._members[i].marker     = L.marker([ this._members[i].coords[0], this._members[i].coords[1] ], {
                 icon    : this._icons[ this._members[i].icon ]
-            }).addTo( this._map );
+            });
+            this._cluster.addLayer( this._members[i].marker );
+
 
             this._members[i].marker.on( 'click', function ( e ) {
                 for ( var j = 0; j < that._members.length; j++ ) {
@@ -163,6 +170,8 @@ var MXAbierto   = {
                 }
             });
         }
+
+        this._map.addLayer( this._cluster );
     },
 
     _drawStates : function () {
@@ -172,7 +181,7 @@ var MXAbierto   = {
                     color       : '#ffffff',
                     opacity     : 1,
                     weight      : 1,
-                    fillColor   : '#ddd',
+                    fillColor   : '#0c5f4a',
                     fillOpacity : 1
                 },
                 highlightStyle  : {
@@ -231,13 +240,13 @@ var MXAbierto   = {
         this._drawStates();
 
         this._map   = L.map( 'map', {
-            dragging        : false,
-            scrollWheelZoom : false
-        }).setView( [ 24.127, -102 ], 5 );
+            dragging        : true,
+            scrollWheelZoom : true
+        }).setView( [ 24.127, -102 ], 3 );
         L.tileLayer( 'http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
             attribution     : 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
-            minZoom         : 5,
-            maxZoom         : 5
+            minZoom         : 3,
+            maxZoom         : 8
         }).addTo( this._map );
 
         this._setIcons();
