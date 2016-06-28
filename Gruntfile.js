@@ -189,12 +189,20 @@ module.exports  = function ( grunt ) {
             css     : [
                 '<%= config.dist %>/css/{,*/}*.css'
             ],
+            js      : [
+                '<%= config.dist %>/js/{,*/}*.js'
+            ],
             options : {
                 assetsDirs  : [
                     '<%= config.dist %>',
                     '<%= config.dist %>/img',
                     '<%= config.dist %>/css'
-                ]
+                ],
+                patterns    : {
+                    js: [
+                        [ /(img\/.*?\.(?:gif|jpeg|jpg|png|webp))/gm ]
+                    ]
+                }
             }
         },
         useminPrepare           : {
