@@ -209,8 +209,8 @@ var MXAbierto   = {
 
     _setIcons   : function () {
         this._icons.state   = L.icon({
-            iconUrl     : '../img/marker-state.ab42645d.png',
-            shadowUrl   : '../img/marker-shadow.e7bd5e4b.png',
+            iconUrl     : 'img/marker-state.ab42645d.png',
+            shadowUrl   : 'img/marker-shadow.e7bd5e4b.png',
             iconSize    : [ 25, 41 ],
             iconAnchor  : [ 12, 41 ],
             popupAnchor : [ 1, -34 ],
@@ -218,8 +218,8 @@ var MXAbierto   = {
         });
 
         this._icons.mun     = L.icon({
-            iconUrl     : '../img/marker-municipality.7c7aeb76.png',
-            shadowUrl   : '../img/marker-shadow.e7bd5e4b.png',
+            iconUrl     : 'img/marker-municipality.7c7aeb76.png',
+            shadowUrl   : 'img/marker-shadow.e7bd5e4b.png',
             iconSize    : [ 25, 41 ],
             iconAnchor  : [ 12, 41 ],
             popupAnchor : [ 1, -34 ],
@@ -227,8 +227,8 @@ var MXAbierto   = {
         });
 
         this._icons.auto    = L.icon({
-            iconUrl     : '../img/marker-auto.69ce7b41.png',
-            shadowUrl   : '../img/marker-shadow.e7bd5e4b.png',
+            iconUrl     : 'img/marker-auto.69ce7b41.png',
+            shadowUrl   : 'img/marker-shadow.e7bd5e4b.png',
             iconSize    : [ 25, 41 ],
             iconAnchor  : [ 12, 41 ],
             popupAnchor : [ 1, -34 ],
