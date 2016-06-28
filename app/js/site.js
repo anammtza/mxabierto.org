@@ -282,7 +282,7 @@ var MXAbierto   = {
                     color       : '#ffffff',
                     opacity     : 1,
                     weight      : 1,
-                    fillColor   : '#0c5f4a',
+                    fillColor   : '#999999',
                     fillOpacity : 1
                 },
                 highlightStyle  : {
