@@ -49,16 +49,6 @@ var MXAbierto   = {
             site        : 'http://www.bajacalifornia.gob.mx'
         },
         {
-            coords      : [ 19.128665, -103.878721 ],
-            data        : '',
-            icon        : 'state',
-            most        : '',
-            name        : 'Colima',
-            resource    : '',
-            resources   : 0,
-            site        : 'http://colima.gob.mx'
-        },
-        {
             coords      : [ 19.589700, -99.445123 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-mexico',
             icon        : 'state',
