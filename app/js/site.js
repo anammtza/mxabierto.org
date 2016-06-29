@@ -243,6 +243,8 @@ var MXAbierto   = {
 
     init        : function () {
         MXAbierto._setMap();
+        MXAbierto._loadBlog();
+        MXAbierto._loadTools();
     },
 
     _addMarkers : function () {
@@ -305,6 +307,74 @@ var MXAbierto   = {
                     }
                 }
             }).addTo( that._map );
+        });
+    },
+
+    _getExcerpt : function ( content ) {
+        var paragraph   = content.match( /<p[^>]*>(.*?)<\/p>/ )[1];
+
+        return paragraph.replace( /(<([^>]+)>)/ig, '' ).substring( 0, 170 );
+    },
+
+    _getWidget  : function ( post, excerpt ) {
+        console.log( excerpt );
+        return `
+            <div class="widget">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">
+                            <img src="http://datos.gob.mx/${ post.grid_photo.path }">
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="body">
+                            <p><small>${ post.author }</small></p>
+                            <h4><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">${ post.name }</a></h4>
+                            <p>${ excerpt }...</p>
+                            <p><small><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">Leer Más</a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>`;
+    },
+
+    _loadBlog   : function () {
+        $.get( 'http://datos.gob.mx/cms-api/posts', {
+            expanded    : true,
+            featured    : false,
+            oder        : 'DESC',
+            page        : 1,
+            per_page    : 2,
+            section     : '5768ab0e68f81c6e0052014f',
+            sort        : 'creation_date',
+            status      : 'PUBLISHED',
+            tag         : '5768ab0e68f81c6e0052015e'
+        }, function ( data ) {
+            var posts   = data.results;
+
+            for ( var i = 0; i < posts.length; i++ ) {
+                $( '#blog-posts' ).append( $( MXAbierto._getWidget( posts[i], MXAbierto._getExcerpt( posts[i].content ) ) ) );
+            }
+        });
+    },
+
+    _loadTools  : function () {
+        $.get( 'http://datos.gob.mx/cms-api/posts', {
+            expanded    : true,
+            featured    : false,
+            oder        : 'DESC',
+            page        : 1,
+            per_page    : 2,
+            section     : '5768ab0e68f81c6e0052014e',
+            sort        : 'creation_date',
+            status      : 'PUBLISHED',
+            tag         : '5768ab0e68f81c6e0052015e'
+        }, function ( data ) {
+            var posts   = data.results;
+
+            for ( var i = 0; i < posts.length; i++ ) {
+                $( '#tool-posts' ).append( $( MXAbierto._getWidget( posts[i], MXAbierto._getExcerpt( posts[i].content ) ) ) );
+            }
         });
     },
 
