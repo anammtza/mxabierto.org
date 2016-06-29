@@ -238,7 +238,6 @@ var MXAbierto   = {
             resources   : 5,
             site        : 'http://www.guanajuato.gob.mx'
         }
-
     ],
 
     init        : function () {
@@ -310,14 +309,7 @@ var MXAbierto   = {
         });
     },
 
-    _getExcerpt : function ( content ) {
-        var paragraph   = content.match( /<p[^>]*>(.*?)<\/p>/ )[1];
-
-        return paragraph.replace( /(<([^>]+)>)/ig, '' ).substring( 0, 170 );
-    },
-
-    _getWidget  : function ( post, excerpt ) {
-        console.log( excerpt );
+    _getWidget  : function ( post ) {
         return `
             <div class="widget">
                 <div class="row">
@@ -328,9 +320,9 @@ var MXAbierto   = {
                     </div>
                     <div class="col-md-6">
                         <div class="body">
-                            <p><small>${ post.author }</small></p>
                             <h4><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">${ post.name }</a></h4>
-                            <p>${ excerpt }...</p>
+                            <p class="category"><a href="http://datos.gob.mx/${ post.section.slug }?category=${ post.category.slug }" target="_blank">${ post.category.name }</a></p>
+                            <p class="author">${ post.author }</p>
                             <p><small><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">Leer Más</a></small></p>
                         </div>
                     </div>
@@ -353,7 +345,7 @@ var MXAbierto   = {
             var posts   = data.results;
 
             for ( var i = 0; i < posts.length; i++ ) {
-                $( '#blog-posts' ).append( $( MXAbierto._getWidget( posts[i], MXAbierto._getExcerpt( posts[i].content ) ) ) );
+                $( '#blog-posts' ).append( $( MXAbierto._getWidget( posts[i] ) ) );
             }
         });
     },
@@ -373,7 +365,7 @@ var MXAbierto   = {
             var posts   = data.results;
 
             for ( var i = 0; i < posts.length; i++ ) {
-                $( '#tool-posts' ).append( $( MXAbierto._getWidget( posts[i], MXAbierto._getExcerpt( posts[i].content ) ) ) );
+                $( '#tool-posts' ).append( $( MXAbierto._getWidget( posts[i] ) ) );
             }
         });
     },
