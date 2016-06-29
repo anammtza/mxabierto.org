@@ -49,16 +49,6 @@ var MXAbierto   = {
             site        : 'http://www.bajacalifornia.gob.mx'
         },
         {
-            coords      : [ 19.128665, -103.878721 ],
-            data        : '',
-            icon        : 'state',
-            most        : '',
-            name        : 'Colima',
-            resource    : '',
-            resources   : 0,
-            site        : 'http://colima.gob.mx'
-        },
-        {
             coords      : [ 19.589700, -99.445123 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-mexico',
             icon        : 'state',
@@ -334,7 +324,7 @@ var MXAbierto   = {
         $.get( 'http://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
-            oder        : 'DESC',
+            order       : 'DESC',
             page        : 1,
             per_page    : 2,
             section     : '5768ab0e68f81c6e0052014f',
@@ -354,7 +344,7 @@ var MXAbierto   = {
         $.get( 'http://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
-            oder        : 'DESC',
+            order       : 'DESC',
             page        : 1,
             per_page    : 2,
             section     : '5768ab0e68f81c6e0052014e',
