@@ -19,7 +19,12 @@ h4                                                  { font-size: 14px; font-weig
 small                                               { font-size: 75%; }
 ul > li                                             { font-size: 16px; font-weight: 300; color: #4d4d4d; }
 .btn-primary                                        { font-size: 26px; font-weight: 300; color: #fff; text-transform: uppercase; }
-#experiences .widget .body small                    { text-transform: uppercase; }
+#experiences .widget .body .category                { font-weight: bold; text-transform: uppercase; color: #9b9b9b; }
+#experiences .widget .body .category > a,
+#experiences .widget .body .category > a:hover,
+#experiences .widget .body .category > a:active,
+#experiences .widget .body .category > a:visited    { text-decoration: none; color: #9b9b9b; }
+#experiences .widget .body .author                  { font-size: 11px; }
 #experiences .widget .body p                        { font-size: 12px; font-weight: 300; }
 
 /********************************
@@ -107,6 +112,7 @@ div.mce_inline_error                                { display: none !important; 
 ********************************/
 #experiences                                        { margin-bottom: 50px; }
 #experiences .widget                                { margin-bottom: 20px; background-color: #f2f2f2; }
+#experiences .widget img                            { height: 160px; }
 #experiences .widget .body                          { padding: 10px 20px 10px 0; }
 #experiences .widget .body h4                       { margin-top: 0; }
 #experiences .widget .body h4 > a                   { color: #515151; }
