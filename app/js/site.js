@@ -324,7 +324,7 @@ var MXAbierto   = {
         $.get( 'http://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
-            oder        : 'DESC',
+            order       : 'DESC',
             page        : 1,
             per_page    : 2,
             section     : '5768ab0e68f81c6e0052014f',
@@ -344,7 +344,7 @@ var MXAbierto   = {
         $.get( 'http://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
-            oder        : 'DESC',
+            order       : 'DESC',
             page        : 1,
             per_page    : 2,
             section     : '5768ab0e68f81c6e0052014e',
