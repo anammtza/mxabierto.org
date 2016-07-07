@@ -79,6 +79,16 @@ var MXAbierto   = {
             site        : 'http://www.nl.gob.mx'
         },
         {
+            coords      : [ 19.128665, -103.878721 ],
+            data        : '',
+            icon        : 'state',
+            most        : '',
+            name        : 'Colima',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://colima.gob.mx'
+        },
+        {
             coords      : [ 18.628424, -96.213227 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-veracruz',
             icon        : 'state',
