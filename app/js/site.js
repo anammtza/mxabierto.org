@@ -60,12 +60,12 @@ var MXAbierto   = {
         },
         {
             coords      : [ 29.729286, -110.565640 ],
-            data        : '',
+            data        : 'http://datos.gob.mx/busca/organization/estado-de-sonora',
             icon        : 'state',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/licitaciones-publicas-y-simplificadas-o-invitacion-restringida-de-obra-publica',
             name        : 'Sonora',
-            resource    : '',
-            resources   : 0,
+            resource    : 'Licitaciones públicas y simplificadas o invitación restringida de obra pública.',
+            resources   : 4,
             site        : 'http://www.sonora.gob.mx'
         },
         {
