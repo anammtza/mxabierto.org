@@ -65,7 +65,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/licitaciones-publicas-y-simplificadas-o-invitacion-restringida-de-obra-publica',
             name        : 'Sonora',
             resource    : 'Licitaciones públicas y simplificadas o invitación restringida de obra pública.',
-            resources   : 4,
+            resources   : 6,
             site        : 'http://www.sonora.gob.mx'
         },
         {
