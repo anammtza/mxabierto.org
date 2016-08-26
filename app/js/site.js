@@ -12,9 +12,9 @@ var MXAbierto   = {
             coords      : [ 27.365227, -102.015292 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-coahuila',
             icon        : 'state',
-            most        : 'http://datos.gob.mx/busca/dataset/sistema-estatal-de-investigadores-del-estado-de-morelos',
+            most        : 'http://datos.gob.mx/busca/dataset/escuela-transparente',
             name        : 'Coahuila de Zaragoza',
-            resource    : 'Sistema Estatal de Investigadores del Estado de Morelos',
+            resource    : 'Escuela Transparente',
             resources   : 14,
             site        : 'http://coahuila.gob.mx',
         },
@@ -67,16 +67,6 @@ var MXAbierto   = {
             resource    : 'Licitaciones públicas y simplificadas o invitación restringida de obra pública.',
             resources   : 6,
             site        : 'http://www.sonora.gob.mx'
-        },
-        {
-            coords      : [ 25.796292, -99.826943 ],
-            data        : '',
-            icon        : 'state',
-            most        : '',
-            name        : 'Nuevo León',
-            resource    : '',
-            resources   : 0,
-            site        : 'http://www.nl.gob.mx'
         },
         {
             coords      : [ 19.128665, -103.878721 ],
