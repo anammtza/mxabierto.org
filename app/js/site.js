@@ -52,9 +52,9 @@ var MXAbierto   = {
             coords      : [ 19.589700, -99.445123 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-mexico',
             icon        : 'state',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/estaciones-automaticas-de-monitoreo-atmosferico',
             name        : 'Estado de México',
-            resource    : '',
+            resource    : 'Estaciones automáticas de monitoreo atmosférico',
             resources   : 14,
             site        : 'http://www.edomex.gob.mx'
         },
