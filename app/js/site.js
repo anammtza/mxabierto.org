@@ -29,7 +29,7 @@ var MXAbierto   = {
             site        : 'http://www.jalisco.gob.mx'
         },
         {
-            coords      : [ 18.885672, -99.219904 ],
+            coords      : [ 18.689102, -99.120684 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-morelos',
             icon        : 'state',
             most        : 'http://datos.gob.mx/busca/dataset/nomina-de-programas-del-poder-ejecutivo',
@@ -49,7 +49,7 @@ var MXAbierto   = {
             site        : 'http://www.bajacalifornia.gob.mx'
         },
         {
-            coords      : [ 19.589700, -99.445123 ],
+            coords      : [ 19.494667, -99.842738 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-mexico',
             icon        : 'state',
             most        : 'http://datos.gob.mx/busca/dataset/estaciones-automaticas-de-monitoreo-atmosferico',
@@ -229,7 +229,7 @@ var MXAbierto   = {
             site        : 'http://www.guanajuato.gob.mx'
         },
         {
-            coords      : [ 19.322862, -99.186618 ],
+            coords      : [ 19.133184, -99.178180 ],
             data        : '',
             icon        : 'auto',
             most        : '',
@@ -239,7 +239,7 @@ var MXAbierto   = {
             site        : 'http://www.unam.mx'
         },
         {
-            coords      : [ 19.379535, -99.184990 ],
+            coords      : [ 19.492079, -99.142327 ],
             data        : 'http://datos.gob.mx/busca/organization/inegi',
             icon        : 'auto',
             most        : 'http://datos.gob.mx/busca/dataset/mapas-de-uso-del-suelo-y-vegetacion-escala-1-250-000-serie-v-queretaro',
