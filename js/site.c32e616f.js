@@ -12,9 +12,9 @@ var MXAbierto   = {
             coords      : [ 27.365227, -102.015292 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-coahuila',
             icon        : 'state',
-            most        : 'http://datos.gob.mx/busca/dataset/sistema-estatal-de-investigadores-del-estado-de-morelos',
+            most        : 'http://datos.gob.mx/busca/dataset/escuela-transparente',
             name        : 'Coahuila de Zaragoza',
-            resource    : 'Sistema Estatal de Investigadores del Estado de Morelos',
+            resource    : 'Escuela Transparente',
             resources   : 14,
             site        : 'http://coahuila.gob.mx',
         },
@@ -52,9 +52,9 @@ var MXAbierto   = {
             coords      : [ 19.589700, -99.445123 ],
             data        : 'http://datos.gob.mx/busca/organization/estado-de-mexico',
             icon        : 'state',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/estaciones-automaticas-de-monitoreo-atmosferico',
             name        : 'Estado de México',
-            resource    : '',
+            resource    : 'Estaciones automáticas de monitoreo atmosférico',
             resources   : 14,
             site        : 'http://www.edomex.gob.mx'
         },
@@ -67,16 +67,6 @@ var MXAbierto   = {
             resource    : 'Licitaciones públicas y simplificadas o invitación restringida de obra pública.',
             resources   : 6,
             site        : 'http://www.sonora.gob.mx'
-        },
-        {
-            coords      : [ 25.796292, -99.826943 ],
-            data        : '',
-            icon        : 'state',
-            most        : '',
-            name        : 'Nuevo León',
-            resource    : '',
-            resources   : 0,
-            site        : 'http://www.nl.gob.mx'
         },
         {
             coords      : [ 19.128665, -103.878721 ],
@@ -237,7 +227,29 @@ var MXAbierto   = {
             resource    : '',
             resources   : 5,
             site        : 'http://www.guanajuato.gob.mx'
+        },
+        {
+            coords      : [ 19.322862, -99.186618 ],
+            data        : '',
+            icon        : 'auto',
+            most        : '',
+            name        : 'Universidad Nacional Autónoma de México',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://www.unam.mx'
+        },
+        {
+            coords      : [ 19.379535, -99.184990 ],
+            data        : 'http://datos.gob.mx/busca/organization/inegi',
+            icon        : 'auto',
+            most        : 'http://datos.gob.mx/busca/dataset/mapas-de-uso-del-suelo-y-vegetacion-escala-1-250-000-serie-v-queretaro',
+            name        : 'Instituto Nacional de Estadística y Geografía',
+            resource    : 'Mapas de Uso del Suelo y Vegetación. Escala 1:250 000. Serie V. Querétaro',
+            resources   : 2096,
+            site        : 'http://www.inegi.org.mx/'
         }
+
+
     ],
 
     init        : function () {
