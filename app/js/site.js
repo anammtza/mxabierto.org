@@ -227,7 +227,29 @@ var MXAbierto   = {
             resource    : '',
             resources   : 5,
             site        : 'http://www.guanajuato.gob.mx'
+        },
+        {
+            coords      : [ 19.322862, -99.186618 ],
+            data        : '',
+            icon        : 'auto',
+            most        : '',
+            name        : 'Universidad Nacional Autónoma de México',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://www.unam.mx'
+        },
+        {
+            coords      : [ 19.379535, -99.184990 ],
+            data        : 'http://datos.gob.mx/busca/organization/inegi',
+            icon        : 'auto',
+            most        : 'http://datos.gob.mx/busca/dataset/mapas-de-uso-del-suelo-y-vegetacion-escala-1-250-000-serie-v-queretaro',
+            name        : 'Instituto Nacional de Estadística y Geografía',
+            resource    : 'Mapas de Uso del Suelo y Vegetación. Escala 1:250 000. Serie V. Querétaro',
+            resources   : 2096,
+            site        : 'http://www.inegi.org.mx/'
         }
+
+
     ],
 
     init        : function () {
