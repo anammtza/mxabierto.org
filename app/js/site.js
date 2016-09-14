@@ -25,7 +25,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/curvas-de-nivel-maestra',
             name        : 'Jalisco',
             resource    : 'Curvas de nivel maestra en formato KML',
-            resources   : 154,
+            resources   : 381,
             site        : 'http://www.jalisco.gob.mx'
         },
         {
@@ -55,7 +55,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/estaciones-automaticas-de-monitoreo-atmosferico',
             name        : 'Estado de México',
             resource    : 'Estaciones automáticas de monitoreo atmosférico',
-            resources   : 14,
+            resources   : 140,
             site        : 'http://www.edomex.gob.mx'
         },
         {
@@ -70,12 +70,12 @@ var MXAbierto   = {
         },
         {
             coords      : [ 19.128665, -103.878721 ],
-            data        : '',
+            data        : 'http://datos.gob.mx/busca/organization/estado-de-colima',
             icon        : 'state',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/recursos-en-salud',
             name        : 'Colima',
-            resource    : '',
-            resources   : 0,
+            resource    : 'Recursos en salud ',
+            resources   : 15,
             site        : 'http://colima.gob.mx'
         },
         {
@@ -95,7 +95,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/indicadores-municipales-de-san-pedro-garza-garcia',
             name        : 'San Pedro Garza García, Nuevo León',
             resource    : 'Accidentes de Transito (Seguridad Municipal)',
-            resources   : 24,
+            resources   : 2,
             site        : 'http://www.sanpedro.gob.mx'
         },
         {
@@ -125,7 +125,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/unidades-medicas-y-servicios-de-salud-en-xalapa',
             name        : 'Xalapa, Veracruz de Ignacio de la Llave',
             resource    : 'Ubicación de centros médicos en Xalapa',
-            resources   : 76,
+            resources   : 85,
             site        : 'http://xalapa.gob.mx'
         },
         {
@@ -135,7 +135,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/propiedad-social-parcelas-y-tierras-de-uso-comun-componente-espacial',
             name        : 'Veracruz, Veracruz de Ignacio de la Llave',
             resource    : 'Tabla de datos de identificación de propiedad social, parcelas y tierras de uso común de del año <2015>',
-            resources   : 27,
+            resources   : 23,
             site        : 'http://www.veracruzmunicipio.gob.mx'
         },
         {
@@ -160,12 +160,12 @@ var MXAbierto   = {
         },
         {
             coords      : [ 25.912007, -109.173469 ],
-            data        : '',
+            data        : 'http://datos.gob.mx/busca/organization/ayuntamiento-de-ahome/',
             icon        : 'mun',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/rutas-de-camiones-los-mochis',
             name        : 'Ahome, Sinaloa',
-            resource    : '',
-            resources   : 0,
+            resource    : 'Cartografía Rutas de camiones de la ciudad de Los Mochis',
+            resources   : 199,
             site        : 'http://ahome.gob.mx'
         },
         {
@@ -205,7 +205,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/inventario-institucional-de-datos-de-ayuntamiento-de-reynosa',
             name        : 'Reynosa, Tamaulipas',
             resource    : 'Inventario Institucional de Datos de Ayuntamiento de Reynosa',
-            resources   : 1,
+            resources   : 16,
             site        : 'http://www.reynosa.gob.mx'
         },
         {
@@ -225,7 +225,7 @@ var MXAbierto   = {
             most        : '',
             name        : 'Auditoría Superior del Estado de Guanajuato',
             resource    : '',
-            resources   : 5,
+            resources   : 6,
             site        : 'http://www.guanajuato.gob.mx'
         },
         {
@@ -245,7 +245,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/mapas-de-uso-del-suelo-y-vegetacion-escala-1-250-000-serie-v-queretaro',
             name        : 'Instituto Nacional de Estadística y Geografía',
             resource    : 'Mapas de Uso del Suelo y Vegetación. Escala 1:250 000. Serie V. Querétaro',
-            resources   : 2096,
+            resources   : 3585,
             site        : 'http://www.inegi.org.mx/'
         }
 
