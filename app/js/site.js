@@ -40,12 +40,12 @@ var MXAbierto   = {
         },
         {
             coords      : [ 30.684445, -115.323386 ],
-            data        : '',
+            data        : 'http://datos.gob.mx/busca/organization/baja-california',
             icon        : 'state',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/incidencia-delictiva-en-el-estado-de-baja-california',
             name        : 'Baja California',
-            resource    : '',
-            resources   : 0,
+            resource    : 'Incidencia delictiva en el Estado de Baja California',
+            resources   : 17,
             site        : 'http://www.bajacalifornia.gob.mx'
         },
         {
@@ -89,6 +89,16 @@ var MXAbierto   = {
             site        : 'http://www.veracruz.gob.mx'
         },
         {
+            coords      : [ 21.878404, -102.303811 ],
+            data        : '',
+            icon        : 'state',
+            most        : '',
+            name        : 'Aguascalientes',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://www.aguascalientes.gob.mx'
+        },
+        {
             coords      : [ 25.671171, -100.394986 ],
             data        : 'http://datos.gob.mx/busca/organization/ayuntamiento-de-san-pedro-garza-garcia',
             icon        : 'mun',
@@ -125,7 +135,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/unidades-medicas-y-servicios-de-salud-en-xalapa',
             name        : 'Xalapa, Veracruz de Ignacio de la Llave',
             resource    : 'Ubicación de centros médicos en Xalapa',
-            resources   : 85,
+            resources   : 106,
             site        : 'http://xalapa.gob.mx'
         },
         {
@@ -165,7 +175,7 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/rutas-de-camiones-los-mochis',
             name        : 'Ahome, Sinaloa',
             resource    : 'Cartografía Rutas de camiones de la ciudad de Los Mochis',
-            resources   : 199,
+            resources   : 393,
             site        : 'http://ahome.gob.mx'
         },
         {
@@ -180,12 +190,12 @@ var MXAbierto   = {
         },
         {
             coords      : [ 23.751691, -99.150254 ],
-            data        : '',
+            data        : 'http://datos.gob.mx/busca/organization/ayuntamiento-de-victoria',
             icon        : 'mun',
-            most        : '',
+            most        : 'http://datos.gob.mx/busca/dataset/denue-negocios-establecidos-establecimientos-comerciales',
             name        : 'Victoria, Tamaulipas',
-            resource    : '',
-            resources   : 0,
+            resource    : 'Directorio Estadistico de Unidades Economicas',
+            resources   : 5,
             site        : 'http://www.ciudadvictoria.gob.mx'
         },
         {
@@ -207,6 +217,26 @@ var MXAbierto   = {
             resource    : 'Inventario Institucional de Datos de Ayuntamiento de Reynosa',
             resources   : 16,
             site        : 'http://www.reynosa.gob.mx'
+        },
+	{
+            coords      : [ 18.881961, -99.177190 ],
+            data        : '',
+            icon        : 'mun',
+            most        : '',
+            name        : 'Jiutepec, Morelos',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://jiutepec.gob.mx/15-2/'
+        },
+ 	{
+            coords      : [ 20.979827, -89.618445 ],
+            data        : '',
+            icon        : 'mun',
+            most        : '',
+            name        : 'Mérida, Yucatán',
+            resource    : '',
+            resources   : 0,
+            site        : 'http://www.merida.gob.mx'
         },
         {
             coords      : [ 28.651713, -106.122329 ],
@@ -245,11 +275,9 @@ var MXAbierto   = {
             most        : 'http://datos.gob.mx/busca/dataset/mapas-de-uso-del-suelo-y-vegetacion-escala-1-250-000-serie-v-queretaro',
             name        : 'Instituto Nacional de Estadística y Geografía',
             resource    : 'Mapas de Uso del Suelo y Vegetación. Escala 1:250 000. Serie V. Querétaro',
-            resources   : 3585,
+            resources   : 2133,
             site        : 'http://www.inegi.org.mx/'
         }
-
-
     ],
 
     init        : function () {
