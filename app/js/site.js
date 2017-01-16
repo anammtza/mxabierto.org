@@ -354,16 +354,16 @@ var MXAbierto   = {
             <div class="widget">
                 <div class="row">
                     <div class="col-md-6">
-                        <a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">
-                            <img src="http://datos.gob.mx/${ post.grid_photo.path }">
+                        <a href="https://datos.gob.mx/herramientas/${ post.slug }" target="_blank">
+                            <img src="https://datos.gob.mx/${ post.grid_photo.path }">
                         </a>
                     </div>
                     <div class="col-md-6">
                         <div class="body">
-                            <h4><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">${ post.name }</a></h4>
-                            <p class="category"><a href="http://datos.gob.mx/${ post.section.slug }?category=${ post.category.slug }" target="_blank">${ post.category.name }</a></p>
+                            <h4><a href="https://datos.gob.mx/herramientas/${ post.slug }" target="_blank">${ post.name }</a></h4>
+                            <p class="category"><a href="https://datos.gob.mx/${ post.section.slug }?category=${ post.category.slug }" target="_blank">${ post.category.name }</a></p>
                             <p class="author">${ post.author }</p>
-                            <p><small><a href="http://datos.gob.mx/herramientas/${ post.slug }" target="_blank">Leer Más</a></small></p>
+                            <p><small><a href="https://datos.gob.mx/herramientas/${ post.slug }" target="_blank">Leer Más</a></small></p>
                         </div>
                     </div>
                 </div>
@@ -371,7 +371,7 @@ var MXAbierto   = {
     },
 
     _loadBlog   : function () {
-        $.get( 'http://datos.gob.mx/cms-api/posts', {
+        $.get( 'https://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
             order       : 'DESC',
@@ -391,7 +391,7 @@ var MXAbierto   = {
     },
 
     _loadTools  : function () {
-        $.get( 'http://datos.gob.mx/cms-api/posts', {
+        $.get( 'https://datos.gob.mx/cms-api/posts', {
             expanded    : true,
             featured    : false,
             order       : 'DESC',
